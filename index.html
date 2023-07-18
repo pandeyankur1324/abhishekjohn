@@ -17,31 +17,53 @@
 
 	<!-- Preloader End -->
 
-	<!-- Header Start -->
-
-	<header class="header">
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="brand-name">
-					<a href="index.html">Abhishek.John</a>
-				</div>
-				<div class="nav-toggle">
-					<span></span>
-				</div>
-				<nav class="nav">
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#works">Works</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
+	<section class="navigation">
+		<div class="nav-container">
+			<div class="brand">
+				<a href="#!">ABHISHEK JOHN</a>
 			</div>
-		</div>
-	</header>
+			<nav>
+				<div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+				<ul class="nav-list">
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">About</a>
+						<ul class=" navbar-dropdown">
+							<li>
+								<a href="#about">About Me</a>
+							</li>
+							<li>
+								<a href="#!">Actor</a>
+							</li>
+							<li>
+								<a href="#!">Acting Workshop</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0)">Maple Production</a>
+						<ul class="navbar-dropdown">
+							<li>
+								<a href="#contact">Enroll</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#!">Projects</a>
+					</li>
 
-	<!-- Header End -->
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- NavigationBar End -->
 
 	<!-- Home Section Start  -->
 
@@ -69,6 +91,11 @@
 	<section class="about-section" id="about">
 		<div class="container">
 			<div class="row">
+				<div class="section-title">
+					<h1>About Me</h1>
+				</div>
+			</div>
+			<div class="row">
 				<div class="about-img">
 					<div class="img-box">
 						<div class="shape-02"></div>
@@ -78,7 +105,7 @@
 				<div class="about-content">
 					<div class="row">
 						<div class="section-title">
-							<h1>About Me</h1>
+							<h1 id="subheading">Actor</h1>
 						</div>
 					</div>
 					<p>Professionally skilled in arts and design craft with knowledge of actors from Delhi & Mumbai
@@ -111,7 +138,8 @@
 						</div>
 					</div>
 					<!-- contact button  -->
-					<a href="#contact" class="btn btn-01">Contact Me</a>
+					<a href="#contact" class="btn btn-01">Project </a>
+					<a href="#contact" class="btn btn-01">Auditions </a>
 
 				</div>
 			</div>
@@ -120,15 +148,46 @@
 
 	<!-- About Section End -->
 
+
+	<!-- Acting Workshop Start  -->
+
+	<section class="about-section" id="actor">
+		<div class="container">
+			<div class="row">
+				<div class="about-img">
+					<div class="img-box">
+						<div class="five-pointed-star"></div>
+						<img src="img/aboutme.jpeg" alt="about-me">
+					</div>
+				</div>
+				<div class="about-content">
+					<div class="row">
+						<div class="section-title">
+							<h1 id="subheading">Acting Workshop</h1>
+						</div>
+					</div>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores eligendi sint accusamus
+						quidem, cumque magnam sapiente illo debitis dolorem! Reprehenderit voluptatem dolorem ratione
+						nesciunt, doloremque nisi enim obcaecati accusantium excepturi?
+						Necessitatibus exercitationem laborum placeat ut maiores pariatur libero soluta suscipit magnam,
+						provident repellat harum quaerat. Dignissimos culpa distinctio sequi repellendus porro sed quos
+						dolorem blanditiis cum, quia officiis commodi ut!
+						Repellat dolore sed, facilis quo totam eum voluptatem recusandae corrupti rerum repellendus!
+						Nihil facilis error modi laudantium quibusdam voluptatibus? Tenetur id deleniti eum adipisci
+						doloremque. Optio similique quos saepe totam!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Acting Workshop End -->
+
 	<!-- Service Section Start  -->
 
 	<section class="service-section" id="services">
 		<div class="container">
-			<div class="row">
-				<div class="section-title">
-					<h1>Skills</h1>
-				</div>
-			</div>
+
 			<div class="row">
 				<!-- Service Item Start  -->
 
@@ -136,9 +195,7 @@
 					<div class="service-item-inner">
 						<img src="img/service/1.jpg" alt="service">
 						<div class="overlay">
-							<h4>
-								Theatre Direction
-							</h4>
+
 						</div>
 					</div>
 				</div>
@@ -150,9 +207,7 @@
 					<div class="service-item-inner">
 						<img src="img/service/2.jpg" alt="service">
 						<div class="overlay">
-							<h4>
-								Good Communication
-							</h4>
+
 						</div>
 					</div>
 				</div>
@@ -164,9 +219,7 @@
 					<div class="service-item-inner">
 						<img src="img/service/3.jpg" alt="service">
 						<div class="overlay">
-							<h4>
-								Project Management
-							</h4>
+
 						</div>
 					</div>
 				</div>
@@ -178,9 +231,7 @@
 					<div class="service-item-inner">
 						<img src="img/service/4.jpg" alt="service">
 						<div class="overlay">
-							<h4>
-								Microsoft Office
-							</h4>
+
 						</div>
 					</div>
 				</div>
@@ -192,9 +243,7 @@
 					<div class="service-item-inner">
 						<img src="img/service/5.jpg" alt="service">
 						<div class="overlay">
-							<h4>
-								Leadership Qualities
-							</h4>
+
 						</div>
 					</div>
 				</div>
@@ -206,9 +255,7 @@
 					<div class="service-item-inner">
 						<img src="img/service/6.jpg" alt="service">
 						<div class="overlay">
-							<h4>
-								Team Player
-							</h4>
+
 						</div>
 					</div>
 				</div>
@@ -220,6 +267,49 @@
 	</section>
 
 	<!-- Service Section End  -->
+
+	<!-- Casting Director Start   -->
+
+	<section class="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="about-img">
+					<div class="img-box">
+						<img src="img/about.jpg" alt="about-me">
+					</div>
+				</div>
+				<div class="about-content">
+					<div class="row">
+						<div class="section-title">
+							<h1 id="subheading">Casting Director</h1>
+						</div>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio autem temporibus reiciendis eum
+						laboriosam ab velit commodi aliquid doloribus voluptatum, distinctio ipsum adipisci neque,
+						blanditiis natus perferendis sit. Quae, tempore!
+						Animi, quam enim hic, beatae provident, nobis corporis ut ad ipsa atque labore? Vel sit nesciunt
+						iure illum ab! Corrupti quaerat soluta perferendis reprehenderit molestiae rerum est neque et
+						sit!
+
+						Reprehenderit ad delectus beatae? Eaque sequi soluta exercitationem et deserunt sit eum
+						repudiandae consectetur amet cum rem neque molestiae incidunt, atque alias cumque eveniet
+						consequatur error necessitatibus recusandae iusto voluptate!
+						Hic modi, quaerat accusantium debitis repellendus labore a mollitia excepturi id molestiae
+						perferendis esse laboriosam quis unde soluta iusto reiciendis, accusamus quibusdam
+						necessitatibus officiis. Omnis magni ut qui assumenda similique.
+						Ipsam tenetur, ad velit cum quae officia quibusdam porro atque vel dicta sapiente deleniti ab
+						veniam est laborum mollitia excepturi delectus quaerat totam, odio illo nostrum! Iusto
+						laudantium non architecto?
+					</p>
+
+					<a href="#contact" class="btn btn-01">Contact </a>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Casting Director End   -->
 
 	<!-- Work Section Start  -->
 
@@ -405,6 +495,7 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js5"></script>
 </body>
 
 </html>
