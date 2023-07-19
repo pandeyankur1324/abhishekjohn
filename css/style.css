@@ -37,6 +37,12 @@ button {
   align-items: center;
 }
 
+.align-center {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
 .justify-content-between {
   justify-content: space-between;
 }
@@ -665,10 +671,6 @@ nav ul li ul li a {
 
 /* Work Section  */
 
-.work-section {
-  padding: 80px 0 0;
-}
-
 .work-section .work-item {
   flex: 0 0 33.33%;
   max-width: 33.33%;
@@ -720,9 +722,16 @@ nav ul li ul li a {
   transition: all 0.5s ease;
 }
 
+.work-section .work-item-inner .overlay a {
+  text-decoration: none;
+  color: white;
+}
+
 .work-section .work-item-inner:hover .overlay h4 {
   transform: tranlateX(0);
 }
+
+/* video carousel  */
 
 /* light box  */
 
