@@ -1,5 +1,16 @@
-let index = 0;
-const totalWorkItems = $(".work-item").length;
+//scroll to top
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to scroll to the top
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Optional: Use smooth scrolling animation
+    });
+  }
+  scrollToTop();
+});
+
+// Call the scrollToTop function after the page loads
 
 $(function () {
   $(window).scroll(function () {
