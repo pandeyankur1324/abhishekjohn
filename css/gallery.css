@@ -202,3 +202,34 @@ header p {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
+.btn-01 {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid transparent;
+  padding: 10px 35px;
+  border-radius: 30px;
+  line-height: 1.5;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.btn-01:hover {
+  background-color: #ffffff;
+  border-color: #ff9800;
+  color: #000000;
+}
+
+.btn-01:focus {
+  outline: none;
+}
+
+#back {
+  position: sticky;
+  bottom: 20px;
+  left: 20px;
+}

@@ -174,3 +174,29 @@ $(document).ready(function () {
 //     },
 //   },
 // });
+
+//image changing in profile section
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", function () {
+  const images = ["img/slide/1.jpeg", "img/slide/2.jpeg", "img/slide/3.jpeg"]; // Add more image URLs here
+  let currentIndex = 0;
+  const interval = 3000; // 3 seconds
+
+  const imageElement = document.getElementById("image_slide");
+
+  // Function to change the image and add/remove the 'visible' class for animation
+  function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    imageElement.src = images[currentIndex];
+    imageElement.classList.remove("visible");
+
+    // We use setTimeout to allow the browser to remove the 'visible' class before adding it again.
+    // This triggers the CSS animation on each image change.
+    setTimeout(() => {
+      imageElement.classList.add("visible");
+    }, 10);
+  }
+
+  // Change the image at regular intervals
+  setInterval(changeImage, interval);
+});

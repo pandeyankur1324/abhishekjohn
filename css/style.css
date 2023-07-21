@@ -3,7 +3,7 @@
 body {
   margin: 0;
   line-height: 1.5;
-  background-color: #f3f2f1;
+  background-color: #eed9c4;
   overflow-x: hidden;
 }
 
@@ -22,6 +22,10 @@ button {
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+p {
+  font-size: 18px !important;
 }
 
 .container {
@@ -84,11 +88,11 @@ h1#subheading {
   bottom: -5px;
   width: 80px;
   height: 3px;
-  background-color: #ff9800;
+  background-color: #ffffff;
 }
 
 .btn-01 {
-  background-color: #ff9800;
+  background-color: #000000;
   color: #ffffff;
   border: 2px solid transparent;
   padding: 10px 35px;
@@ -103,9 +107,8 @@ h1#subheading {
 }
 
 .btn-01:hover {
-  background-color: transparent;
-  border-color: #ff9800;
-  color: #ff9800;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .btn-01:focus {
@@ -381,6 +384,7 @@ nav ul li ul li a {
   flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
+  transform: translateY(-130px);
 }
 
 .home-section .home-content h4 {
@@ -395,7 +399,7 @@ nav ul li ul li a {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 
 .home-section .scroll-down {
@@ -523,6 +527,12 @@ nav ul li ul li a {
   margin: 0;
 }
 
+#note {
+  padding-top: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
 .about-section .about-content .stats .stat-box {
   flex: 0 0 25%;
   max-width: 25%;
@@ -550,7 +560,7 @@ nav ul li ul li a {
 
 /* aboutme section  */
 
-#actor > .container > .row {
+#workshop > .container > .row {
   flex-direction: row-reverse;
 }
 
@@ -572,14 +582,12 @@ nav ul li ul li a {
 }
 
 .service-section .service-item-inner:hover img {
-  filter: grayscale(0);
   transform: scale(1.1);
 }
 
 .service-section .service-item-inner img {
   width: 100%;
   display: block;
-  filter: grayscale(100%);
   transition: all 0.5s ease;
 }
 
@@ -589,7 +597,6 @@ nav ul li ul li a {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
