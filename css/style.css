@@ -864,7 +864,7 @@ nav ul li ul li a {
 }
 
 .contact-section .section-title h1 {
-  color: #ffffff;
+  color: #000000;
 }
 
 .contact-section .section-title h1:before {
@@ -1069,4 +1069,15 @@ nav ul li ul li a {
   .contact-section .contact-form .form {
     padding: 55px 5px;
   }
+}
+.owl-carousel .video iframe{
+  
+  loading:lazy;
+   width:350px;
+   height:300px;
+}
+.owl-carousel2 .video iframe{
+   loading:lazy;
+   width:280px;
+   height:158px;
 }
