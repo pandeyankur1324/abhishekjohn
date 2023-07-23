@@ -975,6 +975,13 @@ nav ul li ul li a {
   opacity: 0.5;
 }
 
+#my-form-status {
+  text-align: center;
+  padding-top: 20px;
+  transition: all 0.6s ease-in-out;
+  color: rgb(224, 66, 66);
+}
+
 /* copyright  */
 .copyright {
   border-top: 1px solid #c5c5c5;
@@ -1070,14 +1077,13 @@ nav ul li ul li a {
     padding: 55px 5px;
   }
 }
-.owl-carousel .video iframe{
-  
-  loading:lazy;
-   width:350px;
-   height:300px;
+.owl-carousel .video iframe {
+  loading: lazy;
+  width: 350px;
+  height: 300px;
 }
-.owl-carousel2 .video iframe{
-   loading:lazy;
-   width:280px;
-   height:158px;
+.owl-carousel2 .video iframe {
+  loading: lazy;
+  width: 280px;
+  height: 158px;
 }
