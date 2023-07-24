@@ -586,7 +586,8 @@ nav ul li ul li a {
 }
 
 .service-section .service-item-inner img {
-  width: 100%;
+  height:280px ;
+  width:350px;
   display: block;
   transition: all 0.5s ease;
 }
@@ -679,8 +680,8 @@ nav ul li ul li a {
 /* Work Section  */
 
 .work-section .work-item {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
+  flex: 0 0 50%;
+  max-width: 50%;
   padding: 15px;
 }
 
@@ -700,6 +701,7 @@ nav ul li ul li a {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  height: 370px;
 }
 
 .work-section .work-item-inner .overlay {
@@ -897,6 +899,17 @@ nav ul li ul li a {
   padding: 0 15px;
   margin-bottom: 30px;
 }
+.contact-lower h1 {
+  text-align: center;
+  color: #000000;
+}
+.contact-lower h1:before{
+  
+    background-color: #ffffff;
+    left: 50%;
+    margin-left: -40px;
+  
+}
 
 .contact-section .contact-form .form .input-group.left,
 .contact-section .contact-form .form .input-group.right {
@@ -1050,6 +1063,10 @@ nav ul li ul li a {
   .service-section .service-item {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .work-section .work-item-inner {
+    width: 100%;
+    height: 280px;
   }
 }
 

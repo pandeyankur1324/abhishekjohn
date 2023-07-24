@@ -25,53 +25,6 @@ $(window).on("load", function () {
   $(".preloader").addClass("loaded");
 });
 
-// // set lightbox img max height
-// const wHeight = $(window).height();
-// $(".lightbox-img").css("height", wHeight + "px");
-
-// //lightbox
-// $(".work-item-inner").click(function () {
-//   index = $(this).parent(".work-item").index();
-//   $(".lightbox").addClass("open");
-//   lightboxSlideShow();
-// });
-// $(".lightbox .prev").click(function () {
-//   if (index == 0) {
-//     index = totalWorkItems - 1;
-//   } else {
-//     index--;
-//   }
-//   lightboxSlideShow();
-// });
-// $(".lightbox .next").click(function () {
-//   if (index == totalWorkItems - 1) {
-//     index = 0;
-//   } else {
-//     index++;
-//   }
-//   lightboxSlideShow();
-// });
-
-// //close lightbox
-// $(".lightbox-close").click(function () {
-//   $(".lightbox").removeClass("open");
-// });
-
-// //close lightbox when clicked outside of img-box
-// $(".lightbox").click(function (event) {
-//   if ($(event.target).hasClass("lightbox")) {
-//     $(this).removeClass("open");
-//   }
-// });
-
-// function lightboxSlideShow() {
-//   const imgSrc = $(".work-item").eq(index).find("img").attr("data-large");
-//   const category = $(".work-item").eq(index).find("h4").html();
-//   $(".lightbox-img").attr("src", imgSrc);
-//   $(".lightbox-category").html(category);
-//   $(".lightbox-counter").html(totalWorkItems + "/" + (index + 1));
-// }
-
 // navigation bar
 (function ($) {
   $(function () {
@@ -168,32 +121,67 @@ $(document).ready(function () {
   });
 });
 
-// $(".owl-carousel").owlCarousel({
-//   items: 1,
-//   merge: true,
-//   loop: true,
-//   margin: 10,
-//   video: true,
-//   lazyLoad: true,
-//   center: true,
-//   responsive: {
-//     480: {
-//       items: 2,
-//     },
-//     600: {
-//       items: 4,
-//     },
-//   },
-// });
-
 //image changing in profile section
 // Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
-  const images = ["img/slide/1.jpeg", "img/slide/2.jpeg", "img/slide/3.jpeg"]; // Add more image URLs here
+  const images = ["img/slide/actor/1.jpeg", "img/slide/actor/2.jpeg", "img/slide/actor/3.jpeg", "img/slide/actor/4.jpg"]; // Add more image URLs here
   let currentIndex = 0;
   const interval = 3000; // 3 seconds
 
   const imageElement = document.getElementById("image_slide");
+
+  // Function to change the image and add/remove the 'visible' class for animation
+  function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    imageElement.src = images[currentIndex];
+    imageElement.classList.remove("visible");
+
+    // We use setTimeout to allow the browser to remove the 'visible' class before adding it again.
+    // This triggers the CSS animation on each image change.
+    setTimeout(() => {
+      imageElement.classList.add("visible");
+    }, 10);
+  }
+
+  // Change the image at regular intervals
+  setInterval(changeImage, interval);
+});
+
+//Image change for 1st inbuild workproduction section
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", function () {
+  const images = ["img/slide/performace/1.jpg", "img/slide/performace/2.jpg", "img/slide/performace/3.jpg", "img/slide/performace/4.jpg", "img/slide/performace/5.jpg", "img/slide/performace/6.jpg", "img/slide/performace/7.jpg" ]; // Add more image URLs here
+  let currentIndex = 0;
+  const interval = 3000; // 3 seconds
+
+  const imageElement = document.getElementById("in_change_first");
+
+  // Function to change the image and add/remove the 'visible' class for animation
+  function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    imageElement.src = images[currentIndex];
+    imageElement.classList.remove("visible");
+
+    // We use setTimeout to allow the browser to remove the 'visible' class before adding it again.
+    // This triggers the CSS animation on each image change.
+    setTimeout(() => {
+      imageElement.classList.add("visible");
+    }, 10);
+  }
+
+  // Change the image at regular intervals
+  setInterval(changeImage, interval);
+});
+
+//image change for second image manipulation section
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", function () {
+  const images = ["img/slide/rehearsals/1.jpg", "img/slide/rehearsals/2.jpg","img/slide/rehearsals/3.jpg","img/slide/rehearsals/4.jpg",
+  "img/slide/rehearsals/5.jpg","img/slide/rehearsals/7.jpg","img/slide/rehearsals/11.jpg","img/slide/rehearsals/14.jpg","img/slide/rehearsals/16.jpg"]; // Add more image URLs here
+  let currentIndex = 0;
+  const interval = 3000; // 3 seconds
+
+  const imageElement = document.getElementById("in_change_second");
 
   // Function to change the image and add/remove the 'visible' class for animation
   function changeImage() {
